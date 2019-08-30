@@ -10,6 +10,4 @@ function costo() {
     resultado = metro * costo;
     let costototal = document.getElementById('resultado');
     costototal.innerHTML = resultado;
-
-
 }
