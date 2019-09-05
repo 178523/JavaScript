@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Cousine|Jua&display=swap');
+.navbar {
+    list-style: none;
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Cousine', monospace;
+}
+
+body .jumbotron:hover {
+    border: solid 2px blue;
+    background: rgb(223, 224, 226);
+}
+
+.container h1 {
+    font-family: 'Cousine', monospace;
+}
