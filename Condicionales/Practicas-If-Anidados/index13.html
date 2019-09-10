@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Práctica 13</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./../../../Estructuras Secuenciales/Practicas/style.css">
+</head>
+
+<body>
+
+    <div class="container mt-3">
+        <h1>Práctica 13</h1>
+        <br>
+        <p>
+            La asociación de vinicultores tiene como política fijar un precio inicial al kilo uva, la cual se clasifica en tipos A y B, y además en tamaños 1 y 2. Cuando se realiza la venta del producto, esta es de un solo tipo y tamaño, se requiere determinar cuánto
+            recibirá un productor por la uva que entrega un embarque, considerando lo siguiente: <br> * Si es tipo A, se le cargan 20c al precio inicial cuando es de tamaño 1; y 30c cuando es de tamaño 2. <br> *Si es tipo B, se rebajan 30c
+            cuando es de tamaño 1, y 50c cuando es de tamaño 2
+
+        </p>
+        <div class="jumbotron">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="">Ingresa el precio inicial del kilo de uva: </label>
+                        <input type="number" name="" id="preciouvainicial" class="form-control" placeholder="" aria-describedby="helpId">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="">Ingresa el total de kilos de uva a vender: </label>
+                        <input type="number" name="" id="kilos" class="form-control" placeholder="" aria-describedby="helpId">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">Tipo de uva: </label>
+                        <input type="text" name="" id="tipo" class="form-control" placeholder="Tipo A ó Tipo B" aria-describedby="helpId">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">Tamaño de uva: </label>
+                        <input type="text" name="" id="tam" class="form-control" placeholder="Tamaño 1 ó Tamaño 2" aria-describedby="helpId">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Boton -->
+            <div class="row">
+                <div class="col-12">
+                    <button id="btnCalcular" class="btn btn-outline-primary btn-lg btn-block"> Calcular</button>
+                </div>
+            </div>
+
+            <!-- Caja Resultado -->
+            <div class="row mt-3">
+                <div class="col-12">
+                    <div class="alert alert-success" role="alert">
+                        <h4 class="alert-info"></h4>
+                        <p id="resultado"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- ----- Scripts ------ -->
+    <script src="./app13.js"></script>
+
+</body>
+
+</html>

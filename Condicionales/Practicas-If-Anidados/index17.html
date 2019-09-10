@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Práctica 17</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./../../../Estructuras Secuenciales/Practicas/style.css">
+</head>
+
+<body>
+
+    <div class="container mt-3">
+        <h1>Práctica 17</h1>
+        <br>
+        <p>
+            Cierta empresa proporciona un bono mensual a sus trabajadores, el cual puede ser por su antigüedad o bien por el monto de su sueldo (el que sea mayor), de la siguiente forma:
+            <br> <br> * Cuando la antigüedad es mayor a dos años, pero menor a 5, se otorga el 20% de su sueldo; cuando es de 5 años o más, 30%. Ahora bien, el bono por concepto de sueldo es si este es menor a $1000 se da 25% de este, cuando este es mayor
+            a $1000, pero menor igual a $3500, se otorga el 15% de su sueldo, para más de 3500 el 10%.
+            <br>
+        </p>
+        <!-- <p class="imagen">
+
+            <img src="./P17.png" alt="">
+        </p> -->
+        <div class="jumbotron">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="">Ingresa el tipo de Bono: </label>
+                        <input type="text" name="" id="tipoBono" class="form-control" placeholder=" 'A' si es por antiguedad. 'S' si es por sueldo. " aria-describedby="helpId">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="">Ingresa el sueldo del empleado: </label>
+                        <input type="number" name="" id="sueldo" class="form-control" placeholder="" aria-describedby="helpId">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="">Ingresa la antiguedad del empleado: </label>
+                        <input type="number" name="" id="antiguedad" class="form-control" placeholder="" aria-describedby="helpId">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Boton -->
+            <div class="row">
+                <div class="col-12">
+                    <button id="btnCalcular" class="btn btn-outline-primary btn-lg btn-block"> Calcular</button>
+                </div>
+            </div>
+
+            <!-- Caja Resultado -->
+            <div class="row mt-3">
+                <div class="col-12">
+                    <div class="alert alert-success" role="alert">
+                        <h4 class="alert-info"></h4>
+                        <p id="resultado"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- ----- Scripts ------ -->
+    <script src="./app17.js"></script>
+
+</body>
+
+</html>

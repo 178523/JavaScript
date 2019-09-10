@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Práctica 2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Práctica 2</h1>
+        <p>
+            Una compañía de viajes cuenta con cuatro tipos de autobuses (A, B, C y D), cada uno tiene un precio por kilómetro recorrido por persona, los costos respectivos son $1.5, $2.0, $2.5 y $3.0. Se requiere determinar el costo total y por persona del viaje
+            considerando que cuando éste se presupuesta debe haber un mínimo de 20 personas, de lo contrario el cobro se realiza con base en este número límite (20).
+        </p>
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="">Tipo de autobús</label>
+                        <input type="text" name="" id="auto" class="form-control" placeholder="" aria-describedby="helpId">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="">¿Cuántas personas irán?</label>
+                        <input type="text" name="" id="persona" class="form-control" placeholder="" aria-describedby="helpId">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" name="" id="boton" class="btn btn-primary btn-lg btn-block">Calcular</button>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="alert alert-success" role="alert">
+                        <h4 class="alert-heading"></h4>
+                        <p id="resultado"></p>
+                        <p class="mb-0"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./p2.js"></script>
+</body>
+
+</html>

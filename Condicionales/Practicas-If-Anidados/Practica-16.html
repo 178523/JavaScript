@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Práctica 16</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-3">
+        <h1>Práctica 16</h1>
+        <p>
+            Una compañía de seguros para autos ofrece dos tipos de póliza: cobertura amplia (A) y daños a terceros (B). Para el plan A, la cuota base es de $1,200, y para el B, de $950.00. A ambos planes se les carga el 10% del costo si la persona conduce tiene por
+            habito beber alcohol, 5% si utiliza lentes, 5% si padece alguna enfermedad (deficiencia cardiaca o diabetes), y si más de 40 años se le carga el 20% de lo contrario solo 10%. <br>Todos estos cargos se realizan sobre el costo del
+            sueldo base.<br> Determinar cuánto le cuesta a una persona contratar una póliza.
+
+        </p>
+        <div class="jumbotron mt-3">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">¿Usted bebe alcohol?</label>
+                        <input type="text" name="" id="bebe" class="form-control" placeholder="SI/NO" aria-describedby="helpId">
+                    </div>
+                </div>
+                <div class="col-6">
+
+                    <div class="form-group">
+                        <label for="">¿Usted usa lentes?</label>
+                        <input type="text" name="" id="lente" class="form-control" placeholder="SI/NO" aria-describedby="helpId">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">¿Qué edad tiene?</label>
+                        <input type="Number" name="" id="edad" class="form-control" placeholder="" aria-describedby="helpId">
+                    </div>
+                </div>
+                <div class="col-6">
+
+                    <div class="form-group">
+                        <label for="">Padece alguna enfermedad (deficiencia cardiaca o diabetes)</label>
+                        <input type="text" name="" id="enfer" class="form-control" placeholder="SI/NO" aria-describedby="helpId">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" name="" id="boton" class="btn btn-primary btn-lg btn-block">Calcular</button>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <div class="alert alert-success" role="alert">
+                        <h4 class="alert-heading"></h4>
+                        <p id="resultado"></p>
+                        <p class="mb-0"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./p16.js"></script>
+</body>
+
+</html>

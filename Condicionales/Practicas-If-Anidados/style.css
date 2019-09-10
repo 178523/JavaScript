@@ -21,4 +21,10 @@ body .jumbotron:hover {
 p {
     color: black;
     font-family: 'Cousine', monospace;
+    text-align: justify;
+}
+
+label {
+    font-size: 20px;
+    font-stretch: bold;
 }
