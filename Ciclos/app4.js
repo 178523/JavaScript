@@ -26,7 +26,7 @@ function calcularAhorro() {
     let imprimirAhorroTotal = document.getElementById('total');
     let suma = 0;
     for (let i = 1; i < contador; i++) {
-        let valorObtenido = document.getElementById(`ahorroMensual${i}`).value;
+        let valorObtenido = document.getElementById(`ahorroMensual${i}`).textContent;
         suma = suma + Number(valorObtenido);
     }
     let spanTotal = document.createElement('span');
