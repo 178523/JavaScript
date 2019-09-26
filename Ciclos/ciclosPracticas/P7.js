@@ -1,29 +1,35 @@
-let calcular = document.getElementById('calcular');
-
+let InputNumbers = document.getElementById('InputNumbers');
+ArrayLetter = [];
+let PrintString = "";
 evento();
 
+
 function evento() {
-    calcular.addEventListener('click', calcula);
+    InputNumbers.addEventListener('change', GetLetter);
 }
 
-function calcula() {
-    let numero = Number(document.getElementById('numero').value);
+fillArray();
 
-    let numAyuda = 0;
 
-    while (numero > 1) {
-        if (numero % 2 == 0) {
-            //es par
-            numero = numero / 2;
-        } else {
-            //es impar
-            numero = (numero * 3) + 1;
-        }
-        let AgregaLista = document.createElement('li')
-        let textoLista = document.createTextNode(`${numero}`);
-        AgregaLista.appendChild(textoLista);
-        let imprimir = document.getElementById('lista');
-        lista.appendChild(AgregaLista);
+function GetLetter(event) {
+    console.log(event);
+    let value = Number(InputNumbers.value);
+
+    if (value > 0 && value < 26) {
+        PrintString += `<li class="list-group-item">${ArrayLetter[value]}</li>`;
+        document.getElementById("AlertPrint").innerHTML = PrintString;
+    } else {
+        swal.fire({
+            type: 'error',
+            title: 'Limite de rango',
+            text: 'Favor de ingresar números entre 0 y 25'
+        })
     }
+    InputNumbers.vale = "";
+}
 
+function fillArray() {
+    for (let i = 0; i < 25; i++) {
+        ArrayLetter[i] = String.fromCharCode(i + 65);
+    }
 }
