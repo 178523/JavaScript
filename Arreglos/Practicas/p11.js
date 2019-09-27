@@ -83,7 +83,7 @@ function busqueda() {
 function MostrarElementos(Array, a) {
     let informacionImprimir = "";
     for (let i = 0; i < Array.length; i++) {
-        informacionImprimir += `<li class="list-group-item">${Array[i]}</li>`
+        informacionImprimir += `<li class="list-group-item">[${i+1}]  ${Array[i]}</li>`
 
     }
     document.getElementById(`ArrayList${a}`).innerHTML = informacionImprimir;
