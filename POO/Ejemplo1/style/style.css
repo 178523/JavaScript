@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#contenedor {
+    background: black;
+    /* width: 90vw; */
+    height: 75vh;
+    position: relative;
+}
+
+.contenedor span {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: white;
+    display: block;
+    position: absolute;
+}
