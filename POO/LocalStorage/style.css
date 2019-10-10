@@ -1,0 +1,12 @@
+#tweet {
+    resize: none;
+}
+
+.jumbotron:hover {
+    border: solid 2px blue;
+}
+
+#lista-tweets {
+    height: 50vh;
+    overflow: scroll;
+}
