@@ -1,0 +1,13 @@
+#nombre,
+#telefono {
+    resize: none;
+}
+
+.jumbotron:hover {
+    border: solid 2px blue;
+}
+
+#lista-tweets {
+    height: 45vh;
+    overflow: scroll;
+}
